@@ -2,7 +2,7 @@
   "name": "videojs-seek-buttons",
   "repository": "https://github.com/mister-ben/videojs-seek-buttons",
   "issues": "https://github.com/mister-ben/videojs-seek-buttons/issues",
-  "version": "1.5.0",
+  "version": "1.5.0-smashcut",
   "description": "Plugin for video.js to add seek buttons to the control bar",
   "main": "dist/videojs-seek-buttons.cjs.js",
   "module": "dist/videojs-seek-buttons.es.js",
@@ -68,7 +68,7 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "lint-staged",
+      "pre-commit": "which node & lint-staged",
       "pre-push": "npm run test"
     }
   },
