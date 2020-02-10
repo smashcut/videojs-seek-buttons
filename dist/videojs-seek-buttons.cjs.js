@@ -47,16 +47,21 @@ var onPlayerReady = function onPlayerReady(player, options) {
     player.controlBar.seekForward = player.controlBar.addChild('seekButton', {
       direction: 'forward',
       seconds: options.forward
-    });
-    player.controlBar.el().insertBefore(player.controlBar.seekForward.el(), player.controlBar.el().firstChild.nextSibling);
+    }); // move button to where it belongs
+
+    var parentEl = player.controlBar.controlBarBottomLeftEl;
+    parentEl.insertBefore(player.controlBar.seekForward.el(), parentEl.firstChild.nextSibling);
   }
 
   if (options.back && options.back > 0) {
     player.controlBar.seekBack = player.controlBar.addChild('seekButton', {
       direction: 'back',
       seconds: options.back
-    });
-    player.controlBar.el().insertBefore(player.controlBar.seekBack.el(), player.controlBar.el().firstChild.nextSibling);
+    }); // move button to where it belongs
+
+    var _parentEl = player.controlBar.controlBarBottomLeftEl;
+
+    _parentEl.insertBefore(player.controlBar.seekBack.el(), _parentEl.firstChild.nextSibling);
   }
 };
 /**
