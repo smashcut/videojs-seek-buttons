@@ -1,4 +1,4 @@
-/*! @name videojs-seek-buttons @version 1.5.0 @license Apache-2.0 */
+/*! @name videojs-seek-buttons @version 1.5.0-smashcut @license Apache-2.0 */
 (function (global, factory) {
   typeof exports === 'object' && typeof module !== 'undefined' ? module.exports = factory(require('video.js')) :
   typeof define === 'function' && define.amd ? define(['video.js'], factory) :
@@ -13,7 +13,7 @@
     subClass.__proto__ = superClass;
   }
 
-  var version = "1.5.0";
+  var version = "1.5.0-smashcut";
 
   var Button = videojs.getComponent('Button'); // Default options for the plugin.
 

@@ -1,4 +1,4 @@
-/*! @name videojs-seek-buttons @version 1.5.0 @license Apache-2.0 */
+/*! @name videojs-seek-buttons @version 1.5.0-smashcut @license Apache-2.0 */
 import videojs from 'video.js';
 
 function _inheritsLoose(subClass, superClass) {
@@ -7,7 +7,7 @@ function _inheritsLoose(subClass, superClass) {
   subClass.__proto__ = superClass;
 }
 
-var version = "1.5.0";
+var version = "1.5.0-smashcut";
 
 var Button = videojs.getComponent('Button'); // Default options for the plugin.
 

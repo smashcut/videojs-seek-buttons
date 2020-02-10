@@ -68,7 +68,7 @@
   ],
   "husky": {
     "hooks": {
-      "pre-commit": "which node & lint-staged",
+      "pre-commit": "lint-staged",
       "pre-push": "npm run test"
     }
   },
@@ -84,7 +84,7 @@
   },
   "dependencies": {
     "global": "^4.3.2",
-    "video.js": "^5.19.2 || ^6 || ^7"
+    "video.js": "smashcut/video.js#smashcut/develop"
   },
   "devDependencies": {
     "@videojs/generator-helpers": "~1.0.0",

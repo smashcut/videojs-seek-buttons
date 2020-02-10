@@ -1,4 +1,4 @@
-/*! @name videojs-seek-buttons @version 1.5.0 @license Apache-2.0 */
+/*! @name videojs-seek-buttons @version 1.5.0-smashcut @license Apache-2.0 */
 'use strict';
 
 function _interopDefault (ex) { return (ex && (typeof ex === 'object') && 'default' in ex) ? ex['default'] : ex; }
@@ -11,7 +11,7 @@ function _inheritsLoose(subClass, superClass) {
   subClass.__proto__ = superClass;
 }
 
-var version = "1.5.0";
+var version = "1.5.0-smashcut";
 
 var Button = videojs.getComponent('Button'); // Default options for the plugin.
 
