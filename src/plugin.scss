@@ -7,8 +7,12 @@
 
   /* This class is added to the video.js element by the plugin by default. */
   & .vjs-seek-button {
-    font-family: 'Material Icons' !important;
+    font-family: 'Material Icons';
     cursor: pointer;
+
+    & .vjs-icon-placeholder {
+      font-family: 'Material Icons';
+    }
 
     &.skip-back::before {
       content: '\e042';
