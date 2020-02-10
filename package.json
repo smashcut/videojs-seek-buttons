@@ -16,7 +16,7 @@
   "scripts": {
     "prebuild": "npm run clean",
     "build": "npm-run-all -p build:*",
-    "build:css": "postcss -o dist/videojs-seek-buttons.css --config scripts/postcss.config.js src/plugin.css",
+    "build:css": "postcss -o dist/videojs-seek-buttons.css --config scripts/postcss.config.js src/plugin.scss",
     "build:js": "rollup -c scripts/rollup.config.js",
     "build:lang": "vjslang --dir dist/lang",
     "clean": "shx rm -rf ./dist ./test/dist",
