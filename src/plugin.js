@@ -41,10 +41,10 @@ const onPlayerReady = (player, options) => {
       direction: 'forward',
       seconds: options.forward
     });
-    player.controlBar.el().insertBefore(
-      player.controlBar.seekForward.el(),
-      player.controlBar.el().firstChild.nextSibling
-    );
+    // move button to where it belongs
+    const parentEl = player.controlBar.controlBarBottomLeftEl;
+
+    parentEl.insertBefore(player.controlBar.seekForward.el(), parentEl.firstChild.nextSibling);
   }
 
   if (options.back && options.back > 0) {
@@ -52,10 +52,10 @@ const onPlayerReady = (player, options) => {
       direction: 'back',
       seconds: options.back
     });
-    player.controlBar.el().insertBefore(
-      player.controlBar.seekBack.el(),
-      player.controlBar.el().firstChild.nextSibling
-    );
+    // move button to where it belongs
+    const parentEl = player.controlBar.controlBarBottomLeftEl;
+
+    parentEl.insertBefore(player.controlBar.seekBack.el(), parentEl.firstChild.nextSibling);
   }
 
 };
