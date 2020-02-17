@@ -83,8 +83,7 @@
     ]
   },
   "dependencies": {
-    "global": "^4.3.2",
-    "video.js": "smashcut/video.js#smashcut/develop"
+    "global": "^4.3.2"
   },
   "devDependencies": {
     "@videojs/generator-helpers": "~1.0.0",
@@ -99,5 +98,8 @@
     "videojs-generator-verify": "~1.2.0",
     "videojs-languages": "^2.0.0",
     "videojs-standard": "^8.0.1"
+  },
+  "peerDependencies": {
+    "video.js": "smashcut/video.js#smashcut/develop"
   }
 }
