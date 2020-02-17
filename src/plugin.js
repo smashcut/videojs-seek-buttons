@@ -115,7 +115,7 @@ class SeekButton extends Button {
   }
 
   dispatchSmashcutUiEvent(detail) {
-    this.dispatchEvent({type: 'smashcutplayerui', detail});
+    this.trigger({type: 'smashcutplayerui', detail, bubbles: true});
   }
 
   handleClick() {

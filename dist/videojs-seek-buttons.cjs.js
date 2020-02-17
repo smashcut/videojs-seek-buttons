@@ -131,9 +131,10 @@ function (_Button) {
   };
 
   _proto.dispatchSmashcutUiEvent = function dispatchSmashcutUiEvent(detail) {
-    this.dispatchEvent({
+    this.trigger({
       type: 'smashcutplayerui',
-      detail: detail
+      detail: detail,
+      bubbles: true
     });
   };
 
