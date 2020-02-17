@@ -114,13 +114,24 @@ class SeekButton extends Button {
       `skip-${this.options_.seconds} ${super.buildCSSClass()}`;
   }
 
+  dispatchSmashcutUiEvent(detail) {
+    this.dispatchEvent({type: 'smashcutplayerui', detail});
+  }
+
   handleClick() {
     const now = this.player_.currentTime();
+    const dur = this.player_.duration();
 
     if (this.options_.direction === 'forward') {
       this.player_.currentTime(now + this.options_.seconds);
+      const position = (now + this.options_.seconds) * 100 / dur;
+
+      this.dispatchSmashcutUiEvent({action: 'scrubbing-end', position});
     } else if (this.options_.direction === 'back') {
       this.player_.currentTime(now - this.options_.seconds);
+      const position = (now - this.options_.seconds) * 100 / dur;
+
+      this.dispatchSmashcutUiEvent({action: 'scrubbing-end', position});
     }
   }
 }

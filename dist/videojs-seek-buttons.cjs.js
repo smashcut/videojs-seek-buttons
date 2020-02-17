@@ -130,13 +130,33 @@ function (_Button) {
     return "vjs-seek-button skip-" + this.options_.direction + " " + ("skip-" + this.options_.seconds + " " + _Button.prototype.buildCSSClass.call(this));
   };
 
+  _proto.dispatchSmashcutUiEvent = function dispatchSmashcutUiEvent(detail) {
+    this.dispatchEvent({
+      type: 'smashcutplayerui',
+      detail: detail
+    });
+  };
+
   _proto.handleClick = function handleClick() {
     var now = this.player_.currentTime();
+    var dur = this.player_.duration();
 
     if (this.options_.direction === 'forward') {
       this.player_.currentTime(now + this.options_.seconds);
+      var position = (now + this.options_.seconds) * 100 / dur;
+      this.dispatchSmashcutUiEvent({
+        action: 'scrubbing-end',
+        position: position
+      });
     } else if (this.options_.direction === 'back') {
       this.player_.currentTime(now - this.options_.seconds);
+
+      var _position = (now - this.options_.seconds) * 100 / dur;
+
+      this.dispatchSmashcutUiEvent({
+        action: 'scrubbing-end',
+        position: _position
+      });
     }
   };
 
