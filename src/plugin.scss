@@ -12,7 +12,12 @@
 
     & .vjs-icon-placeholder {
       font-family: 'Material Icons';
-      font-size: 2.3em;
+
+      &:before {
+        font-size: 1.2em;
+        position: absolute;
+        top: -10px;
+      }
     }
 
     &.skip-back::before {
