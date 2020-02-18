@@ -7425,7 +7425,7 @@ vfile@^2.0.0:
 
 video.js@smashcut/video.js#smashcut/develop:
   version "7.7.4-smashcut"
-  resolved "https://codeload.github.com/smashcut/video.js/tar.gz/f2091d0fc3d39d23ae02d5627aaef2537ecb8509"
+  resolved "https://codeload.github.com/smashcut/video.js/tar.gz/6487624a3cf186b7f11f87d0787c9b1531c6ab52"
   dependencies:
     "@babel/runtime" "^7.5.5"
     "@videojs/http-streaming" "github:smashcut/http-streaming#smashcut/develop"
