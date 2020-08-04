@@ -140,7 +140,7 @@ function (_Button) {
 
     if (this.options_.direction === 'forward') {
       this.player_.currentTime(now + this.options_.seconds);
-      var position = (now + this.options_.seconds) * 100 / dur;
+      var position = (now + this.options_.seconds) / dur;
       this.dispatchSmashcutUiEvent({
         action: 'scrubbing-end',
         position: position
@@ -148,7 +148,7 @@ function (_Button) {
     } else if (this.options_.direction === 'back') {
       this.player_.currentTime(now - this.options_.seconds);
 
-      var _position = (now - this.options_.seconds) * 100 / dur;
+      var _position = (now - this.options_.seconds) / dur;
 
       this.dispatchSmashcutUiEvent({
         action: 'scrubbing-end',
