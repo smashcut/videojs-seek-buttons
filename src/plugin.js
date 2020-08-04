@@ -124,12 +124,12 @@ class SeekButton extends Button {
 
     if (this.options_.direction === 'forward') {
       this.player_.currentTime(now + this.options_.seconds);
-      const position = (now + this.options_.seconds) * 100 / dur;
+      const position = (now + this.options_.seconds) / dur;
 
       this.dispatchSmashcutUiEvent({action: 'scrubbing-end', position});
     } else if (this.options_.direction === 'back') {
       this.player_.currentTime(now - this.options_.seconds);
-      const position = (now - this.options_.seconds) * 100 / dur;
+      const position = (now - this.options_.seconds) / dur;
 
       this.dispatchSmashcutUiEvent({action: 'scrubbing-end', position});
     }
