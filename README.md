@@ -14,7 +14,6 @@ Plugin for video.js to add seek buttons to the control bar. These buttons allow 
   - [`<script>` Tag](#script-tag)
   - [Browserify/CommonJS](#browserifycommonjs)
   - [RequireJS/AMD](#requirejsamd)
-- [License](#license)
 
 <!-- END doctoc generated TOC please keep comment here to allow auto update -->
 ## Installation
@@ -103,10 +102,5 @@ require(['video.js', 'videojs-seek-buttons'], function(videojs) {
   });
 });
 ```
-
-## License
-
-Apache-2.0. Copyright (c) mister-ben &lt;git@misterben.me&gt;
-
 
 [videojs]: http://videojs.com/
