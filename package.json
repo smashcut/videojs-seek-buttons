@@ -49,7 +49,6 @@
     "videojs-plugin"
   ],
   "author": "mister-ben <git@misterben.me>",
-  "license": "Apache-2.0",
   "vjsstandard": {
     "ignore": [
       "dist",
